@@ -1,0 +1,14 @@
+{
+    "scripts": {
+      "get_notes": {
+        "public": true
+      },
+      "create_note": {
+        "public": true
+      },
+      "delete_note": {
+        "public": true
+      }
+    },
+    "errors": {}
+}

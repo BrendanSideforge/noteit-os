@@ -1,0 +1,64 @@
+.notes {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust 200px as per your requirement */
+    gap: 20px; /* Adjust the gap between cards */
+}
+
+.notes .note {
+    padding: 16px;
+    border-radius: 8px;
+    background: rgb(57, 55, 53);
+
+    color: #ccc;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.notes .note .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 8px;
+}
+
+.notes .note .header .title {
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+
+    border-bottom: 2px solid white;
+}
+
+.notes .note .header .id {
+    font-weight: 500;
+    color: #FFD700;
+    font-size: 14px;
+}
+
+.notes .note .tags {
+    display: flex;
+    flex-direction: row;
+    column-gap: 4px;
+
+    padding-bottom: 24px;
+}
+
+.notes .note .tags .tag {
+    border: 1px solid #FFD700;
+    padding: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+
+    border-radius: 12px;
+}
+
+.notes .note .description {
+    overflow: auto;
+}
+
+.notes .note .description .text {
+    font-size: 16px;
+    color: #ccc;
+}

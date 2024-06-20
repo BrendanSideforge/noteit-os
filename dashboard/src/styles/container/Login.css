@@ -1,0 +1,114 @@
+
+.login-container {
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    min-width: 70%;
+    min-height: 70%;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+    justify-content: center;
+
+}
+
+.login-container .branding {
+    display: flex;
+    justify-content: center;
+}
+
+.login-container .branding .brand {
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.login-container .inputs {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+}
+
+.login-container .inputs .input {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+}
+
+.login-container .inputs .input .help {
+    font-size: 14px;
+    color: "#ccc";
+}
+
+.login-container .inputs .input input {
+
+    border: 1px solid;
+    outline: none;
+    
+    padding: 16px;
+    border-radius: 8px;
+    background: rgb(57, 55, 53);
+
+    color: #ccc;
+}
+
+.login-container .action {
+    display: flex;
+    flex-direction: row;
+    column-gap: 8px;
+    justify-content: center;
+}
+
+.login-container .action button {
+    border-radius: 8px;
+    border: 1px solid white;
+    outline: none;
+
+    padding: 16px;
+    padding-right: 24px;
+    padding-left: 24px;
+
+    background-color: white;
+    color: rgb(61, 61, 61);
+    width: 100%;
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.login-container .action button:hover {
+    background-color: rgb(61, 61, 61);
+    color: white;
+}
+
+.bottom-metadata {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    /* background-color: #f0f0f0; Change this to your desired background color */
+    padding: 10px;
+
+    display: flex;
+    column-gap: 8px;
+}
+
+.bottom-metadata .niche {
+    display: flex;
+    column-gap: 8px;
+    align-items: center;
+}
+
+.bottom-metadata .niche .id {
+    font-weight: bold;
+    color: white;
+    font-size: 16px;
+}
+
+.bottom-metadata .niche .value {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 14px;
+}

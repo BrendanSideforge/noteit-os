@@ -1,0 +1,14 @@
+datasource db {
+    provider = "postgresql"
+    url      = env("DATABASE_URL")
+}
+
+model UserNotes {
+    id          Int      @unique @default(autoincrement()) @db.Integer
+    userId      String   @db.Uuid
+    title       String   @db.Text
+    tags        String[] @db.Text
+    description String   @db.Text
+    hidden      Boolean  @default(false) @db.Boolean
+    createdAt   DateTime @default(now()) @db.Timestamp
+}

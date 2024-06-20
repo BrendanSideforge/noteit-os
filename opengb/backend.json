@@ -1,0 +1,47 @@
+{
+    "registries": {
+      "default": {
+        "local": {
+          "directory": "../opengb-modules/modules"
+        }
+      },
+      "local": {
+        "local": {
+          "directory": "modules"
+        }
+      }
+    },
+    "runtime": {
+      "cors": {
+        "origins": [
+          "http://localhost:3000",
+          "https://noteit.sideforge.io",
+          "https://sideforge.io"
+        ]
+      }
+    },
+    "modules": {
+      "users": {},
+      "rate_limit": {},
+      "tokens": {},
+      "friends": {},
+      "auth": {
+        "config": {
+          "email": {
+            "fromEmail": "admin@sideforge.io"
+          }
+        }
+      },
+      "email": {
+        "config": {
+          "provider": {
+            "sendGrid": {
+            }
+          }
+        }
+      },
+      "notes": {
+        "registry": "local"
+      }
+    }
+  }
